@@ -227,9 +227,9 @@ func groupedMetricToCWMeasurement(groupedMetric *groupedMetric, config *Config) 
 	}
 
 	return cWMeasurement{
-		Namespace:  groupedMetric.metadata.namespace,
 		Dimensions: dimensions,
 		Metrics:    metrics,
+		Namespace:  groupedMetric.metadata.namespace,
 	}
 }
 
